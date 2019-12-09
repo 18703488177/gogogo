@@ -10,9 +10,25 @@ header .header-one{
      color: #333;
      font-weight: 500;
 }
-header .header-two{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-}
+
 header p{font-size: 15px;}
+header .wrapper{
+     display: block;
+     width: 100%;
+     overflow-x: hidden;
+}
+header .content{
+  
+     display: inline-flex;
+     width: 20rem;
+}
+header .content li{
+     flex: 0 0 auto;
+     display: inline-block;
+     padding: 0 .24rem;
+      margin: 0 .1rem;
+}
+.content li span{
+      font-size: 13px;
+      font-weight: 500;
+}
