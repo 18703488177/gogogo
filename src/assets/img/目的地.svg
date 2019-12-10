@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_destination_unsel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="斑马旅游改版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="私人订制" transform="translate(-100.000000, -2413.000000)">
+            <g id="Btnnav" transform="translate(0.000000, 2388.000000)">
+                <g id="Navigationbar">
+                    <g id="目的地" transform="translate(75.000000, 15.000000)">
+                        <g id="icn_destination_unsel" transform="translate(25.000000, 10.000000)">
+                            <polygon id="Fill-1" fill="#FFFFFF" points="0 24 24 24 24 0 0 0"></polygon>
+                            <path d="M21,10 C21,14.971 12,23 12,23 C12,23 3,14.971 3,10 C3,5.029 7.029,1 12,1 C16.971,1 21,5.029 21,10 Z" id="Stroke-3" stroke="#BEBEBE"></path>
+                            <path d="M16,10 C16,12.209 14.209,14 12,14 C9.791,14 8,12.209 8,10 C8,7.791 9.791,6 12,6 C14.209,6 16,7.791 16,10 Z" id="Stroke-5" stroke="#BEBEBE"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

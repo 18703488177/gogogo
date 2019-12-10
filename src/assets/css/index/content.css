@@ -1,0 +1,30 @@
+.change{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.36rem 0 0.5rem;
+}
+.change img{
+    display: block;
+    width: 0.72rem;
+    margin: 0 0 0.12rem;
+}
+.change2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.change2 img{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 0 0.1rem;
+}
+.change2>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+#components-layout-demo-top-side .logo {
+    width: 2.4rem;
+    height: .62rem;
+    background: rgba(255, 255, 255, 0.2);
+    margin: .32rem .56rem .32rem 0;
+    float: left;
+  }
+.ant-layout-sider-children{
+    height: 11.45rem;
+}
+.no{
+    width: 5.4rem;
+    height: 11.45rem;
+    margin-left: 2rem;
+    position: absolute;
+    overflow-y: auto;
+}
+.L-letf{
+    width: 5.4rem;
+    flex-shrink: 0;
+}
