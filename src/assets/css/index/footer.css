@@ -6,8 +6,9 @@
     width: 100%;
     bottom:0;
     z-index: 1;
+    background: #fff;
 }
-.footer>div{
+.footer>a{
     display: flex;
     flex-direction: column;
     justify-content: center;

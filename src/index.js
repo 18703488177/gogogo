@@ -6,6 +6,9 @@ import store from "./store/store.jsx"
 import App from "./App";
 import "./assets/css/common.css"
 import "./assets/js/flexible.js"
+
+import 'antd-mobile/dist/antd-mobile.css';
+
 ReactDOM.render(
 	(
 		<Provider store={store}>
