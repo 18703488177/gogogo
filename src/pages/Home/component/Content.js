@@ -13,7 +13,7 @@ import "../../../assets/css/index/content.css"
 
 export default class Content extends Component {
     state = {
-        data: ['1', '2', '3'],
+        data: ['1', '2', '3',],
         imgHeight: 176,
       }
       componentDidMount() {
@@ -26,13 +26,11 @@ export default class Content extends Component {
       }
       render() {
         return (
+          <>
           <WingBlank style={{margin:" 0.3rem"}}>
             <Carousel
               autoplay={true}
               infinite
-              dots
-              beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-              afterChange={index => console.log('slide to', index)}
             >
               {this.state.data.map(val => (
                 <a
@@ -53,7 +51,9 @@ export default class Content extends Component {
                 </a>
               ))}
             </Carousel>
-             <div className="change" style={{width:"100%",height:"1.16rem"}}>
+          
+          </WingBlank> 
+            <div className="change" style={{width:"100%",height:"1.16rem"}}>
                   <div>
                    <img src={im7}></img>
                     <span>旅行团</span>
@@ -89,7 +89,19 @@ export default class Content extends Component {
                     <span>周边酒店</span>
                    </div>
              </div>
-          </WingBlank>
+             <div className="content">
+                 <p>带着孩子探索世界</p>
+                 <div>
+                    <dl>
+                       <dt><img></img></dt>
+                       <dd><p>神奇</p></dd>
+                    </dl>
+                 </div>
+               <div>
+
+               </div>
+             </div>
+             </>
         )
       }
     }

@@ -29,15 +29,11 @@ export default class Header extends Component {
         )
     }
     componentDidMount(){
-         const  warpper=this.refs.wrapper2;
-         console.log(warpper);
-         
-         
+         const  warpper=this.refs.wrapper2;                
          this.scroll = new BScroll(warpper,{
             scrollX : true
-          })
-          console.log(this.scroll);
-          
+            
+          })       
     }
 }
 

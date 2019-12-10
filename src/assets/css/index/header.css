@@ -11,7 +11,8 @@ header .header-one{
      font-weight: 500;
 }
 .header-cont{
-     border-bottom:0.02rem solid #ccc ;
+     border-bottom:0.02rem solid #ccc;
+     background: #fff;
 }
 
 header p{font-size: 15px;}

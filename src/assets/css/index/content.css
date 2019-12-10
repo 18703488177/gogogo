@@ -28,3 +28,11 @@
     justify-content: center;
     align-items: center;
 }
+.content{
+    width: 100%;
+
+}
+.content>p{
+      width: 100%;
+      height: ;
+}
