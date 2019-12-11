@@ -4,6 +4,8 @@
     justify-content: space-around;
     align-items: center;
     margin: 0.36rem 0 0.5rem;
+    padding-bottom: 1rem;
+    padding-top:0.88rem;
 }
 .change img{
     display: block;
@@ -29,10 +31,61 @@
     align-items: center;
 }
 .content{
-    width: 100%;
-
+    padding: 0.88rem 0.3rem 0.5rem;
 }
+.wrapper2-content{padding-top: 2.36rem;}
 .content>p{
-      width: 100%;
-      height: ;
+      height: .4rem;
+      font-size: .36rem;
+      color: #000;
+      font-weight: 900;
+     
+}
+.content>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.3rem;
+    justify-content: space-between;
+}
+.content>div dl{
+    width: 3.3rem;
+    height: 3.76rem;
+    margin: 0 0.08rem 0.18rem 0;
+}
+.content dl>div{
+     padding-top: 0.18rem;
+}
+.content dl div p{
+    color: #333;
+    margin: 0 0 0.06rem;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content dl div .info{
+         width: 100%;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;    
+}
+
+.content dl div .info  .span1{
+               margin-left: 0 
+}
+.info span{
+    /* display: block; */
+    border-right: 0.01rem solid rgba(193,67,116,.2);
+    padding-right: 0.1rem;
+    margin-left: 0.1rem;
+    color: #898989;
+    font-size: 10px;
+    
+}
+.content dl div ul li{
+                float: left;
+                color: #C14374;
+                border: 0.01rem solid rgba(193,67,116,.2);
+                margin: 0 0.12rem 0.12rem 0;
 }

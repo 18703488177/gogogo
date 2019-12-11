@@ -1,5 +1,5 @@
 header .header-one{
-     width: 100%;
+     width: 7.5rem;
      height: 0.88rem;
      padding: 0  0.36rem;
      display: flex;
@@ -13,6 +13,10 @@ header .header-one{
 .header-cont{
      border-bottom:0.02rem solid #ccc;
      background: #fff;
+     position: fixed;
+     top:0;
+     left: 0;
+     z-index: 10;
 }
 
 header p{font-size: 15px;}

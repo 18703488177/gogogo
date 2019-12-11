@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel, WingBlank } from 'antd-mobile';
+// import BScroll from 'better-scroll'
+import axios from 'axios'
 import im7 from "../../../assets/img/旅行.png"
 import im8 from "../../../assets/img/定制.png"
 import im9 from "../../../assets/img/周边.png"
@@ -8,7 +10,7 @@ import i7 from "../../../assets/img/亲子.png"
 import i8 from "../../../assets/img/游轮.png"
 import i9 from "../../../assets/img/小树.png"
 import i10 from "../../../assets/img/酒店.png"
-
+import product from '../../../assets/img/product4.jpg'
 import "../../../assets/css/index/content.css"
 
 export default class Content extends Component {
@@ -23,10 +25,16 @@ export default class Content extends Component {
             data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
           });
         }, 100);
+        axios.get("http://localhost:8000/api/banma").then(res=>{
+        console.log(res)
+      })
       }
       render() {
         return (
-          <>
+          
+            <div className="wrapper2-content">
+
+          
           <WingBlank style={{margin:" 0.3rem"}}>
             <Carousel
               autoplay={true}
@@ -93,17 +101,66 @@ export default class Content extends Component {
                  <p>带着孩子探索世界</p>
                  <div>
                     <dl>
-                       <dt><img></img></dt>
-                       <dd><p>神奇</p></dd>
+                       <img src={product}></img>
+                       <div>
+                         <p>神奇动物在这里|新西兰11天9晚</p>
+                            <div className="info">
+                              <span className="span1">亲子首选</span>
+                              <span>亲子首选</span>
+                              <span>亲子首选</span>
+                              <span>亲子首选</span>
+                              <span>亲子首选</span>
+                          </div>
+                          <ul>
+                            <li>亲子</li>
+                            <li>看动物</li>
+                            <li>亲近自然</li>
+                          </ul>
+                       </div>
+                    </dl>
+                    <dl>
+                       <img></img>
+                       <div><p>神奇动物在这里|新西兰11天9晚</p></div>
+                    </dl>
+                    <dl>
+                       <img></img>
+                       <div><p>神奇动物在这里|新西兰11天9晚</p></div>
+                    </dl>
+                    <dl>
+                       <img></img>
+                       <div>
+                          <p>神奇动物在这里|新西兰11天9晚</p>
+                          <div className="info">
+                              <span>亲子首选</span>
+                          </div>
+                       </div>
+                    </dl>
+                    <dl>
+                       <img></img>
+                       <div>
+                          <p>神奇动物在这里|新西兰11天9晚</p>
+                          <div className="info">
+                              <span>亲子首选</span>
+                          </div>
+                       </div>
+                    </dl>
+                    <dl>
+                       <img></img>
+                       <div>
+                          <p>神奇动物在这里|新西兰11天9晚</p>
+                          <div className="info">
+                              <span>亲子首选</span>
+                          </div>
+                       </div>
                     </dl>
                  </div>
                <div>
 
                </div>
              </div>
-             </>
+             </div>
         )
       }
-    }
+  
     
-
+  }
