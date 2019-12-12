@@ -11,6 +11,10 @@
     display: block;
     width: 0.72rem;
     margin: 0 0 0.12rem;
+   
+}
+.am-carousel{
+     touch-action: none;
 }
 .change2{
     display: flex;
@@ -33,7 +37,7 @@
 .content{
     padding: 0.88rem 0.3rem 0.5rem;
 }
-.wrapper2-content{padding-top: 2.36rem;}
+/* .wrapper2-content{padding-top: 2.36rem;} */
 .content>p{
       height: .4rem;
       font-size: .36rem;
@@ -53,8 +57,14 @@
     height: 3.76rem;
     margin: 0 0.08rem 0.18rem 0;
 }
+.content>div dl>img{
+    height: 2rem;
+    display: block;
+    width: 3.3rem;
+}
 .content dl>div{
      padding-top: 0.18rem;
+     width: 100%;
 }
 .content dl div p{
     color: #333;
@@ -71,21 +81,21 @@
          overflow: hidden;    
 }
 
-.content dl div .info  .span1{
-               margin-left: 0 
-}
+
 .info span{
-    /* display: block; */
-    border-right: 0.01rem solid rgba(193,67,116,.2);
-    padding-right: 0.1rem;
-    margin-left: 0.1rem;
     color: #898989;
-    font-size: 10px;
-    
+    font-size: 10px;   
+}
+.content dl div ul{
+     width: 100%;
+     height: 0.4rem;
 }
 .content dl div ul li{
-                float: left;
+                float: left;              
                 color: #C14374;
                 border: 0.01rem solid rgba(193,67,116,.2);
-                margin: 0 0.12rem 0.12rem 0;
+                margin: 0 0.1rem 0.1rem 0;
+}
+.content dl>.price{
+    color: #C04374;
 }

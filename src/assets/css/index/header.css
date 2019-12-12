@@ -13,7 +13,7 @@ header .header-one{
 .header-cont{
      border-bottom:0.02rem solid #ccc;
      background: #fff;
-     position: fixed;
+     position:sticky;
      top:0;
      left: 0;
      z-index: 10;

@@ -9,22 +9,50 @@ import Img4  from "../../assets/img/我的.svg"
 import "../../assets/css/index/footer.css"
 
 class Footer extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+          isToggleOn: false,
+          color: '#C04374'
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    
+    handleClick(e) {
+    
+        
+        this.setState(_ => ({
+          isToggleOn: !this.state.isToggleOn,
+          color: this.state.isToggleOn ? '#C04374': '#333'
+        
+          
+        }),_=>{
+            console.log(11);
+            
+        } ); 
+      }
     render(){
         return(
             <div>
                 <div className="footer">
                
                     <Link to="/">
-                        <div><img src={Img} ></img></div>
-                        <div><span>首页</span></div>
+                        <div onClick={this.handleClick}>
+                            <div><img src={Img} ></img></div>
+                            <div><span>首页</span></div>
+                        </div> 
                     </Link>
                     <Link to="/destination">
-                        <div><img src={Img1} style={{marginTop:"-0.08rem"}} ></img></div>
-                        <div><span>目的地</span> </div>
+                       <div  style={this.handleClick?{color: (this.state.color)}:null}>
+                            <div><img src={Img1} style={{marginTop:"-0.08rem"}} ></img></div>
+                            <div><span>目的地</span> </div>
+                      </div> 
                     </Link>
                     <Link to="/customized">
-                        <div><img src={Img2} style={{marginTop:"-0.45rem"}} ></img></div>
-                        <div><span>定制游</span></div>
+                       <div>
+                            <div><img src={Img2} style={{marginTop:"-0.45rem"}} ></img></div>
+                            <div><span>定制游</span></div>
+                      </div> 
                     </Link>
                     <Link to="/find">
                         <div><img src={Img3} style={{marginTop:"-0.04rem"}}></img></div>

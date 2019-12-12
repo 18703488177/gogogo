@@ -1,0 +1,63 @@
+.mylogin{
+    background: #fff;
+    height: 13.3rem;
+}
+.zcheader{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.88rem;
+    padding: 0 0.4rem;
+    font-size: 24px;
+    line-height: 0.88rem;
+  
+}
+.zccontent{
+    box-sizing: border-box;
+    background: #fff;
+    margin:0.2rem 0.8rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.zccontent>div span{
+     font-size: 20px;
+     color: #333;
+    
+}
+.zccontent>div{
+    margin-bottom: 1.2rem;
+}
+.zccontent>div p{
+    font-size: 12px;
+    color: #898989;
+   
+}
+.zccontent>p{
+    font-size: 15px;
+    color: #333;
+    padding: 0 0 0.32rem;
+}
+.zccontent>input{
+    width: 100%;
+    margin-right: 1rem;
+    height: 0.88rem;
+    font-size: 0.3rem;
+    margin-bottom: 0.6rem;
+    border-bottom:0.01rem solid rgba(193,67,116,.5) ;
+}
+.zccontent>span{
+    display: block;
+    width: 6rem;
+    height: 0.88rem;
+    background: #E2A0B9;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #fff;
+    font-size: 0.36rem;
+    margin: 0 auto
+}
+.zccontent>a{
+    text-decoration: underline;
+    margin-top: 0.6rem;
+}
