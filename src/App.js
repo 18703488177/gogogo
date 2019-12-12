@@ -8,7 +8,9 @@ import Find from "./pages/Find/Find.jsx";
 import My from "./pages/My/My.jsx";
 
 import ProductList from "./pages/ProductList/ProductList.jsx"
+import Details from "./pages/Details/Details.jsx"
 
+import './assets/iconfont/detail/iconfont/iconfont.css';
 class App extends Component {
 
 	render() {
@@ -22,6 +24,8 @@ class App extends Component {
 					<Route path="/find" component={Find} />
 					<Route path="/my" component={My} />
 
+
+					<Route path="/details" component={Details} />
 					<Route path="/productlist" component={ProductList} />
 					<Redirect to="/home" from="/" exact />
 				</Switch>

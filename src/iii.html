@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// function Person(name) {
+		// 	this.name = name;
+		// }
+		// let jj = new Person("John")
+		// console.log(jj);
+		
+		// let obj = new Object();
+		// obj.__proto__ = Person.prototype; // 此时便建立了obj对象的原型链：
+		// // // 将obj的this指向了Person
+		// let result = Person.call(obj, "a"); // 相当于obj.Person("John")
+		// console.log(obj);
+		
+		// if(typeof result === 'object'){
+		// 	console.log(1);
+		// 	console.log(result);
+		// }else{
+		// 	console.log(2);
+		// 	console.log(obj);
+		// }
+		// console.log(typeof result);
+		
+		// function Test(){
+		// 	return 1
+		// }
+		// function Test2(){
+		// 	this.name = 123
+		// }
+		// function New(Fn){
+		// 	let obj = {};
+		// 	obj.__proto__ = Fn.prototype;
+		// 	// A.call( B,x,y )：就是把A的函数放到B中运行，x 和 y 是A方法的参数。
+		// 	let result = Fn.call(obj)
+		// 	console.log(result);
+			
+		// 	if(typeof result === 'object'){
+		// 		return result
+		// 	}else{
+		// 		return obj
+		// 	}
+		// }
+		// let a = New(Test)
+		// let b = New(Test2)
+		// console.log("a");
+		// console.log(a);
+		// console.log("b");
+		// console.log(b);
+
+		// for(var i = 0 ; i < 5 ; i++){
+		// 	setTimeout(()=>{
+		// 		console.log(i);
+		// 	},1000)
+		// }
+		// console.log(i);
+		let str = "abcdefg"
+		console.log(str.slice(2, 5));
+		
+	</script>
+</body>
+
+</html>
