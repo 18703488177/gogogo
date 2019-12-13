@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import "../../../assets/css/login/login2.css"
+
 import { Icon } from 'antd';
 
-export default class login2 extends Component {
+
+ class login2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,16 +20,7 @@ export default class login2 extends Component {
     handleClick=(e)=>{
         this.props.history.go(-1)
    }
-   handleSubmit=e=>{
-       e.preventDefaule()
-       this.props.from.validataFields((err,values)=>{
-           if(!err){
-               this.props.getUserInfo(values)
-               console.log('Received values of form: ', values);
-
-           }
-       })
-   }
+ 
 
 //    componentDidMount(){
 //     this.search()
@@ -47,7 +40,7 @@ search() {
 
         
     render() {
-        const { getFieldDecorator } = this.props.form;
+     
         return (
             <div className="mylogin">
             <div className="zcheader"><Icon  onClick={this.handleClick} type="left" /></div>
@@ -68,3 +61,6 @@ search() {
         )
     }
 }
+
+
+export default login2
