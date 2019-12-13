@@ -13,7 +13,7 @@ export const removeTask = (id)=>{
 
 
 export const getUserLogin = (username, password)=>{
-	return axios.post(`/killer/login`,{
+	return axios.post(`/api/login`,{
 		username,
 		password
 	})
