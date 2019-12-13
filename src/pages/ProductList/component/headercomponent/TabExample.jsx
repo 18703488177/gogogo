@@ -92,7 +92,7 @@ class TabExample extends Component {
 			this.setState({
 				flag: false
 			})
-			axios(`/api?page=${this.state.pages}&keywords=&theme_id[]=&district_id[]=277&order_by=5&type=0&platform=4`)
+			axios(`/api/productlist?page=${this.state.pages}&keywords=&theme_id[]=&district_id[]=277&order_by=5&type=0&platform=4`)
 				.then(res => {
 					let newlist = this.state.list ? [...this.state.list, ...res.data.data.list] : res.data.data.list
 					this.setState(() => {
