@@ -9,12 +9,20 @@ module.exports=(app)=>{
     //     changeOrigin:true,
     //     secure:false
     // }))
-    app.use("/api",proxy({
-        // https://m.bmtrip.com/api/v3/m1/user/info/list?platform=4
-        target:"https://m.bmtrip.com",
-        pathRewrite:{
-            '^/api':'/api/v3/m1/user/info/list?platform=4',
-        },
-        changeOrigin:true
-    }))
+    // app.use("/api/productlist",proxy({
+    //     // https://m.bmtrip.com/api/v3/m1/user/info/list?platform=4
+    //     target:"https://m.bmtrip.com",
+    //     pathRewrite:{
+    //         '^/api/productlist':'/api/v3/m1/user/info/list?platform=4',
+    //     },
+    //     changeOrigin:true
+    // }))
+    // app.use("/api",proxy({
+    //     // https://m.bmtrip.com/api/v3/m1/user/info/list?platform=4
+    //     target:"https://m.bmtrip.com",
+    //     pathRewrite:{
+    //         '^/api':'/api/v3/m1/user/info/list',
+    //     },
+    //     changeOrigin:true
+    // }))
 }
