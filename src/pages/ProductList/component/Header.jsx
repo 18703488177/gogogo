@@ -1,22 +1,21 @@
 import React, { Component } from 'react'
-import { NavBar, Icon } from 'antd-mobile';
 
-import "../productListcss/css/header.css"
+
+import NavBar from "./headercomponent/NavBar.jsx"
+import "../productListcss/css/header.css";
+import TabExample from "./headercomponent/TabExample.jsx"
+import Screen from "./headercomponent/Screen.jsx";
+
 class Header extends Component {
+	constructor(props){
+		super(props)
+	}
 	render() {
 		return (
 			<div className="product_list_header">
-				<NavBar
-					className="product_list_navbar"
-					mode="light"
-					icon={<Icon type="left" style={{ color:"#666" }} />}
-					onLeftClick={() => console.log('onLeftClick')}
-					rightContent={[
-						<Icon key="0" type="search" style={{ color:"#666" }} />,
-					]}
-				>
-					关西
-				</NavBar>
+				<NavBar />
+				<TabExample />
+				<Screen />
 			</div>
 		)
 	}

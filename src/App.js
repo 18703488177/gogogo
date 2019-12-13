@@ -12,7 +12,9 @@ import Login from './pages/My/component/login.jsx'
 import Login2 from './pages/My/component/login2.jsx'
 
 import ProductList from "./pages/ProductList/ProductList.jsx"
+import Details from "./pages/Details/Details.jsx"
 
+import './assets/iconfont/detail/iconfont/iconfont.css';
 class App extends Component {
 
 	render() {
@@ -30,6 +32,7 @@ class App extends Component {
                     <Route path="/login"component={Login}/>
 					<Route path='/login2'component={Login2}/>
 
+					<Route path="/details" component={Details} />
 					<Route path="/productlist" component={ProductList} />
 					<Redirect to="/home" from="/" exact />
 				</Switch>

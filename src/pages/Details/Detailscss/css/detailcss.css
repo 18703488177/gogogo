@@ -1,0 +1,65 @@
+.details {
+  position: relative;
+}
+.details .details_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.88rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0 0.5rem;
+}
+.details .details_header .opheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.details .details_header .opheader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.2rem;
+  height: 100%;
+  background: pink;
+}
+.details .details_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1.1rem;
+  width: 100%;
+  padding: 0.1rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.details .details_footer .details_footer_service {
+  width: 3rem;
+  height: 100%;
+  display: flex;
+}
+.details .details_footer .details_footer_service > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+}
+.details .details_footer .details_footer_service > div i {
+  font-size: 22px;
+}
+.details .details_footer .details_footer_shopBtn {
+  width: 4.5rem;
+  height: 100%;
+  text-align: center;
+  line-height: 0.9rem;
+  background-color: #C04374;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=detailcss.css.map */
