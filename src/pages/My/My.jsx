@@ -13,7 +13,7 @@ export default class My extends Component {
 		array:[]
 	}
 	componentDidMount(){
-		axios("/api").then(res=>{
+		axios("/api/list").then(res=>{
 			this.setState({
 				array: res.data.data.list
 			  })

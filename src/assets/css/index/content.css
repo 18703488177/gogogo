@@ -37,7 +37,7 @@
 .content{
     padding: 0.88rem 0.3rem 0.5rem;
 }
-/* .wrapper2-content{padding-top: 2.36rem;} */
+.wrapper2-content{overflow-y: auto;}
 .content>p{
       height: .4rem;
       font-size: .36rem;
