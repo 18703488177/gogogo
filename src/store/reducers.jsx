@@ -1,10 +1,11 @@
-import {combineReducers} from "redux-immutable";
-// import LoginReducer from "../pages/login/reducer/LoginReducer.jsx";
+import {combineReducers} from "redux";
+import LoginReducer from "../pages/My/reducer/loginreducer.js";
 import def from "./defultreducer.jsx"
 
 const reducers = combineReducers(
 	{
-		def
+		def,
+		LoginReducer
 	}
 )
 

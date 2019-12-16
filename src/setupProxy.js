@@ -26,4 +26,14 @@ module.exports=(app)=>{
         },
         changeOrigin:true
     }))
+    app.use("/api/find",proxy({
+       //https://m.bmtrip.com/api/v3/article/list?sort_id=0&page=1&platform=4
+        target:"https://m.bmtrip.com",
+        pathRewrite:{
+            '^/api/find':'/api/v3/article/list',
+        },
+        changeOrigin:true,
+        secure:false
+    }))
+    
 }

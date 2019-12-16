@@ -12,9 +12,8 @@ export const removeTask = (id)=>{
 }
 
 
-export const getUserLogin = (username, password)=>{
-	return axios.post(`/api/login`,{
-		username,
-		password
-	})
+export const getUserLogin = (obj)=>{
+	return axios.post(`/api/login`,obj)
+	
+	
 }
