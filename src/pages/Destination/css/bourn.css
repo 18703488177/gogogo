@@ -9,13 +9,129 @@
     height: 11.45rem;
 }
 .no{
-    width: 5.4rem;
+    width: 5.5rem;
     height: 11.45rem;
     margin-left: 2rem;
     position: absolute;
+    overflow: hidden;
     overflow-y: auto;
+    padding: .4rem .4rem;
+    background: #fff;
 }
 .L-letf{
-    width: 5.4rem;
-    flex-shrink: 0;
+    width: 4.6rem;
+    /* flex-shrink: 0; */
+}
+.Spanactive{
+    font-weight: bold;
+}
+
+.ant-menu-submenu-active{
+    font-weight: bold;
+}
+.ant-menu-submenu-active1{
+    font-weight: bold;
+}
+.L-img{
+    width: 4.6rem;
+    min-height: 3.2rem;
+    height: 3.2rem;
+    overflow: hidden;
+}
+.L-img .L-img1{
+    width: 2.2rem;
+    height: 1.44rem;
+    background: pink;
+    float: left;
+    margin-bottom: 0.16rem;
+    margin-right: 0.1rem;
+    position: relative;
+}
+.L-img .L-img2{
+    float: right;
+   
+}
+.L-img .L-img1 img,.L-img .L-img2 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.L-img .L-border{
+    position: absolute;
+    top: 0.2rem;
+    left: 0.15rem;
+    width: 1.94rem;
+    height: 1.14rem;
+    border: 1px solid #fff;
+    border-radius: 0.1rem;
+    color: #fff;
+    text-align: center;
+}
+.L-img .L-border p{
+    margin-top: .25rem;
+}
+.L-img .L-border span{
+    display: block;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.L-text{
+    text-align: center;
+    position: relative;
+}
+.disB{
+    display: block;
+    position: absolute;
+    top: 0.01rem;
+    left: 3rem;
+}
+.C-text{
+    font-size: 0.42667rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: .32rem;
+    margin-top: .32rem;
+}
+.C-img{
+    position: relative;
+}
+.C-img img{
+    width: 229px;
+    height: 141px;
+}
+.text1{
+    font-size: .24rem;
+    margin-bottom: .06rem;
+    margin-top: .2rem;
+    font-family: PingFangSC-Medium;
+    color: #333;
+    font-weight: 500;
+}
+.text2{
+    font-size: .20rem;
+    color: #898989;
+    font-family: PingFangSC-Medium;
+    letter-spacing: .15px;
+    margin-top: .1rem;
+}
+.money{
+    display: block;
+    color: #c04374;
+    font-family: PingFangSC-Regular;
+    font-weight: normal;
+    font-size: 0.26rem;
+    letter-spacing: 0.3Px;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+.text3{
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    width: 72px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: .3rem;
+    background: rgba(0, 0, 0, 0.4);
 }

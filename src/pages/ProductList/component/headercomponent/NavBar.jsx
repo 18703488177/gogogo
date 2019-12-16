@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavBar, Icon } from 'antd-mobile';
-
-function ListNavBar(){
+import {withRouter} from "react-router-dom"
+function ListNavBar(props){
 	return (
 		<NavBar
 				className="product_list_navbar"
 				mode="light"
 				icon={<Icon type="left" style={{ color: "#666" }} />}
-				onLeftClick={() => console.log('onLeftClick')}
+				onLeftClick={() => props.history.go(-1)}
 				rightContent={[
 					<Icon key="0" type="search" style={{ color: "#666" }} />,
 				]}
@@ -16,4 +16,4 @@ function ListNavBar(){
 		</NavBar>
 	)
 }
-export default ListNavBar
+export default withRouter(ListNavBar)

@@ -1,0 +1,38 @@
+.header-Top{
+    width: 100%;
+    height: .88rem;
+    background: #fff;
+}
+.header-top{
+    width: 100%;
+    height: .88rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: .3rem;
+    text-align: center;
+    line-height: .88rem;
+    background: #fff;
+    z-index: 10;
+}
+.footer-Bot{
+    width:100%;
+    height: 1rem;
+}
+.footer-bot{
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    background: cyan;
+    display: flex;
+    flex: 1;
+}
+.footer-bot div{
+    width: 24%;
+    height: 100%;
+    border-right: 1px;
+}
+

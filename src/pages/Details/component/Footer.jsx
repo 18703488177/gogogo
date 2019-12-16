@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import Swiper from 'swiper';
+// var mySwiper = new Swiper('.swiper-container', { /* ... */ });
 class Footer extends Component {
 	render() {
 		return (
@@ -7,13 +8,13 @@ class Footer extends Component {
 				<div className="details_footer_service">
 					<div>
 						<span>
-							<i class="iconfont icon-emaxcitygerenxinxitubiaoji02"></i>
+							<i className="iconfont icon-emaxcitygerenxinxitubiaoji02"></i>
 						</span>
 						<span>收藏</span>
 					</div>
 					<div>
 						<span>
-						<i class="iconfont icon-kefu"></i>
+							<i className="iconfont icon-kefu"></i>
 						</span>
 						<span>客服</span>
 					</div>
