@@ -63,8 +63,24 @@
 		// 	},1000)
 		// }
 		// console.log(i);
-		let str = "abcdefg"
-		console.log(str.slice(2, 5));
+		// let str = "abcdefg"
+		// console.log(str.slice(2, 5));
+		var str = "hello";
+		console.log(1 + "     " + str);
+		
+		function pr(){
+			console.log(2 + "     " + str);
+			alert(str)
+		}
+		function f(){
+			console.log(3 + "     " + str);
+			var str = "word"
+			console.log(4 + "     " + str);
+			pr()
+		}
+		console.log(5 + "     " + str);
+		f()
+		console.log(6 + "     " + str);
 		
 	</script>
 </body>
