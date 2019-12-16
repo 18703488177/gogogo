@@ -56,10 +56,10 @@ module.exports = (app)=>{
         changeOrigin : true,
 
     }))
-    app.use("/api",proxy({
+    app.use("/api/dd",proxy({
         target : "https://m.bmtrip.com",
         pathRewrite : {
-            "^/api" : "/api/v3/m1/area/group?scene=6&platform=4"
+            "^/api/dd" : "/api/v3/m1/area/group?scene=6&platform=4"
         },
         changeOrigin : true,
 

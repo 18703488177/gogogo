@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel, WingBlank } from 'antd-mobile';
+import {withRouter} from 'react-router-dom'
 // import BScroll from 'better-scroll'
 import axios from 'axios'
 import im7 from "../../../assets/img/旅行.png"
@@ -12,7 +13,7 @@ import i9 from "../../../assets/img/小树.png"
 import i10 from "../../../assets/img/酒店.png"
 import "../../../assets/css/index/content.css"
 
-export default class Content extends Component {
+class Content extends Component {
   state = {
     data: ['1', '2', '3',],
     imgHeight: 176,
@@ -39,6 +40,9 @@ export default class Content extends Component {
 
     this.getdata()
 
+  }
+  jump = (proid)=>{
+    this.props.history.push({pathname : "/details",query : {proid}})
   }
   render() {
 
@@ -120,7 +124,7 @@ export default class Content extends Component {
                 return (
 
                   <dl key={index}>
-                    <img src={item.img}></img>
+                    <img src={item.img} onClick={this.jump.bind(this, item.id)}></img>
                     <div>
                        <p>{item.title}</p>
                       <div className="info">
@@ -152,3 +156,6 @@ export default class Content extends Component {
 
   }
 }
+
+
+export default withRouter(Content)

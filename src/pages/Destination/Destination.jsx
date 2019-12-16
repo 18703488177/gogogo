@@ -15,7 +15,7 @@ export default class Bourn extends Component {
 				num : 2,
 		}
 		componentDidMount(){
-			axios("/api").then(res=>{
+			axios("/api/dd").then(res=>{
 				this.setState({
 					array : res.data.data
 				})

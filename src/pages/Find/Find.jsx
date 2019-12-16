@@ -90,7 +90,7 @@ export default class Find extends Component {
 					<li><span>有福利</span></li> */}
 						</nav>
 					</div>
-					<section>
+					<section className="sec">
 
 						{
 							data.length != 0 && data.map((item, index) => {

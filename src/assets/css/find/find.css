@@ -39,20 +39,20 @@
 .find-nav li>span{
     padding: 0 0.24rem;
 }
-section{
+.sec{
     padding: 0.36rem 0.36rem;
 }
-section img{
+.sec img{
      display: block;
      width: 100%;
      height: 3.8rem;
     
 }
-section>div{
+.sec>div{
       margin-bottom: 0.72rem;
       position: relative;
 }
-section .find-cont{
+.sec .find-cont{
     width: 100%;
     font-family: PingFangSC-Medium;
     font-weight: 500;
@@ -65,7 +65,7 @@ section .find-cont{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-section .find-cont2{
+.sec .find-cont2{
     width: 100%;
     text-align: center;
     font-family: PingFangSC-Light;
